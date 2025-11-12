@@ -1,0 +1,107 @@
+"use client";
+import Link from 'next/link';
+import React, { useState } from 'react';
+import menu_data from '@/data/menu-data';
+
+const MobileMenu = () => {
+  const [openSidebar, setOpenSidebar] = useState(false);
+  const [navTitle, setNavTitle] = useState("");
+
+  const openMobileMenu = (menu: string) => {
+    if (navTitle === menu) {
+      setNavTitle("");
+    } else {
+      setNavTitle(menu);
+    }
+  };
+
+  return (
+    <>
+      <div className="mobile-menu-area sticky-menu" id="navbar">
+        <div className="mobile-menu">
+          <div className="mobile-logo">
+            <Link href="/">
+              <img 
+                src="assets/images/logo.png" 
+                alt="Logo" 
+                style={{ 
+                  maxWidth: '80px', 
+                  height: 'auto', 
+                  maxHeight: '40px',
+                  objectFit: 'contain'
+                }} 
+              />
+            </Link>
+          </div>
+          
+          {/* Hamburger Button - Same as desktop */}
+          <div className="hamburger-toggle" onClick={() => setOpenSidebar(!openSidebar)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Offcanvas - Same style as desktop */}
+      <div className={`sidebar-group info-group ${openSidebar ? "isActive" : ""}`}>
+        <div className="sidebar-widget">
+          <div className="sidebar-widget-container">
+            <div className="widget-heading">
+              <a style={{ cursor: "pointer" }} className="close-side-widget" onClick={() => setOpenSidebar(!openSidebar)}>
+                <i className="bi bi-x-lg"></i>
+              </a>
+            </div>
+            <div className="sidebar-textwidget">
+              <div className="sidebar-info-contents">
+                <div className="content-inner">
+                  <div className="sidebar-logo">
+                    <Link href="/"><img src="assets/images/logo.png" alt="logo" /></Link>
+                  </div>
+                  <div className="sidebar-widget-menu">
+                    <ul>
+                      {menu_data.map((item, i) => (
+                        <li key={i} className="dropdown"> 
+                          <Link href={item.path ?? '/'} style={{ cursor: "pointer", color: "#fff" }}
+                            onClick={() => {
+                              openMobileMenu(item.title);
+                              if (!item.submenu) {
+                                setOpenSidebar(false);
+                              }
+                            }} data-toggle="dropdown">
+                            {item.title}
+                            {item.submenu && <i className={`icon-arrow ${navTitle === item.title ? "open" : "close"}`} ></i>}
+                          </Link>
+
+                          {item.submenu && (
+                            <ul className={`dropdown-menu ${navTitle === item.title ? "show" : "hide"}`}>
+                              {item.submenu.map((subItem, j) => (
+                                <li key={j}><Link href={subItem.path} onClick={() => setOpenSidebar(false)}>{subItem.title}</Link></li>
+                              ))}
+                            </ul>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="contact-info">
+                    <h2>Contact Info</h2>
+                    <ul className="list-style-one">
+                      <li><i className="bi bi-geo-alt-fill"></i>Navi Mumbai, Maharashtra</li>
+                      <li><i className="bi bi-telephone-fill"></i><a href="tel:+919876543210" style={{textDecoration:'none'}}>+91 98765 43210</a></li>
+                      <li><i className="bi bi-envelope"></i><a href="mailto:ganeshgadge222@gmail.com" style={{
+                        textDecoration:'none'
+                      }}>ganeshgadge222@gmail.com</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default MobileMenu;
