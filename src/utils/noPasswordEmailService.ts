@@ -78,7 +78,7 @@ ${data.message}
 Please respond to: ${data.email}
   `);
   
-  return `mailto:ganeshgadge222@gmail.com?subject=${subject}&body=${body}`;
+  return `mailto:docs@sglogsitics.net.in?subject=${subject}&body=${body}`;
 };
 
 // Send notification to admin (console-based for now)

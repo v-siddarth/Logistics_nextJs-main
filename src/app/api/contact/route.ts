@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
     const emailSent = await sendEmailSimple(submissionData);
 
     if (emailSent) {
-      console.log('🎉 EMAIL SUCCESSFULLY SENT TO: ganeshgadge222@gmail.com');
+      console.log('🎉 EMAIL SUCCESSFULLY SENT TO: docs@sglogsitics.net.in');
       console.log('✅ Check your email inbox!');
       console.log('🟢'.repeat(50));
       

@@ -140,7 +140,7 @@ const ServiceDetailsArea = () => {
                   <a href="#"><i className="bi bi-telephone-fill"></i></a>
                 </div>
                 <div className="widget-contact-content">
-                  <h4><a href="tel:+919876543210">+91 98765 43210</a></h4>
+                  <h4><a href="tel:+919594279131" style={{textDecoration:'none'}}>+91 9594279131</a> / <a href="tel:+919137674355" style={{textDecoration:'none'}}>+91 9137674355</a></h4>
                 </div>
               </div>
               <div className="contact-box style-three">

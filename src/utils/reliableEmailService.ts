@@ -67,7 +67,7 @@ export const sendEmailWeb3Forms = async (data: EmailData): Promise<boolean> => {
         subject: `Contact Form: ${data.option || 'General Inquiry'}`,
         message: `From: ${data.name} (${data.email})\nService: ${data.option}\n\n${data.message}`,
         from_name: 'Logistics Contact Form',
-        to_email: 'ganeshgadge222@gmail.com',
+        to_email: 'docs@sglogsitics.net.in',
       }),
     });
 

@@ -23,11 +23,11 @@ const GoogleMap = () => {
                   </div>
                   <div className="map-content">
                     <span>Email</span>
-                    <a href="mailto:ganeshgadge222@gmail.com" 													style={{
+                    <a href="mailto:docs@sglogsitics.net.in" 													style={{
 														color: 'inherit',
 														textDecoration: 'none',
 														cursor: 'pointer'
-													}}><h4>ganeshgadge222@gmail.com</h4></a>
+													}}><h4>docs@sglogsitics.net.in</h4></a>
                   </div>
                 </div>
               </div>

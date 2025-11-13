@@ -32,7 +32,7 @@ Submitted on: ${new Date().toLocaleString()}
 Please respond to the customer at: ${data.email}
         `,
         from_name: 'Logistics Contact Form',
-        to_email: 'ganeshgadge222@gmail.com', // Your email from .env.local
+        to_email: 'docs@sglogsitics.net.in', // Your email from .env.local
       }),
     });
 
@@ -76,7 +76,7 @@ export const sendViaEmailJS = async (data: EmailData): Promise<boolean> => {
         template_params: {
           from_name: data.name,
           from_email: data.email,
-          to_email: 'ganeshgadge222@gmail.com',
+          to_email: 'docs@sglogsitics.net.in',
           subject: `Contact Form: ${data.option}`,
           message: data.message,
         },
@@ -107,5 +107,5 @@ Message: ${data.message}
 Submitted: ${new Date().toLocaleString()}
   `);
   
-  return `mailto:ganeshgadge222@gmail.com?subject=${subject}&body=${body}`;
+  return `mailto:docs@sglogsitics.net.in?subject=${subject}&body=${body}`;
 };

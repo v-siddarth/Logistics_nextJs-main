@@ -39,10 +39,10 @@ const ContactHomeOne = ({style_2} : any) => {
                     <h4>Email</h4>
              											<h6>
 												<a 
-													href="mailto:ganeshgadge222@gmail.com" 
+													href="mailto:docs@sglogsitics.net.in" 
 													style={{
 														color: 'inherit',
-														textDecoration: 'underline',														cursor: 'pointer'													}}												>													ganeshgadge222@gmail.com												</a>											</h6>
+														textDecoration: 'underline',														cursor: 'pointer'													}}												>													docs@sglogsitics.net.in												</a>											</h6>
                   </div>
                 </div>
               </div>

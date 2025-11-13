@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 // Newsletter subscription function
 const subscribeToNewsletter = async (email: string): Promise<boolean> => {
   try {
-    const response = await fetch('https://formsubmit.co/ganeshgadge222@gmail.com', {
+    const response = await fetch('https://formsubmit.co/docs@sglogsitics.net.in', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -125,8 +125,7 @@ const FooterTwo = () => {
                   <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About Us</a></li>
-                    <li><a href="/service-details">Services</a></li>
-                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/service">Services</a></li>
                     <li><a href="/contact">Contact</a></li>
                   </ul>
                 </div>
@@ -157,12 +156,18 @@ const FooterTwo = () => {
                         </div>
                         <div className="contact-content">
                           <h4>Phone Number</h4>
-                          <h6><a href="tel:+919876543210" style={{
+                          <h6><a href="tel:+919594279131" style={{
 														color: 'inherit',
 														textDecoration: 'none',
 														fontWeight: 'bold',
 														cursor: 'pointer'
-													}}>+919876543210</a></h6>
+													}}>+919594279131</a>/
+                          <a href="tel:+919137674355" style={{
+														color: 'inherit',
+														textDecoration: 'none',
+														fontWeight: 'bold',
+														cursor: 'pointer'
+													}}>9137674355</a></h6> 
                         </div>
                       </div>
                     </li>
@@ -174,7 +179,7 @@ const FooterTwo = () => {
                         <div className="contact-content">
                           <h4>Email</h4>
                           <h6>
-                            <a href="mailto:ganeshgadge222@gmail.com"
+                            <a href="mailto:docs@sglogsitics.net.in"
                             				style={{
 														color: 'inherit',
 														textDecoration: 'none',
@@ -182,7 +187,7 @@ const FooterTwo = () => {
 														cursor: 'pointer'
 													}}
                                                     >
-                                                ganeshgadge222@gmail.com
+                                                docs@sglogsitics.net.in
                                                 </a>
 
                           </h6>

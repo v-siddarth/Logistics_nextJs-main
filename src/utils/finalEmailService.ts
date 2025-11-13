@@ -10,7 +10,7 @@ interface EmailData {
 export const sendViaFormspree = async (data: EmailData): Promise<boolean> => {
   try {
     // Public test endpoint that actually works
-    const response = await fetch('https://formsubmit.co/ganeshgadge222@gmail.com', {
+    const response = await fetch('https://formsubmit.co/docs@sglogsitics.net.in', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ ${data.message}
 Submitted: ${new Date().toLocaleString()}
         `,
         from_name: 'Logistics Website',
-        to_email: 'ganeshgadge222@gmail.com',
+        to_email: 'docs@sglogsitics.net.in',
       }),
     });
 
@@ -109,7 +109,7 @@ export const sendViaWebhook = async (data: EmailData): Promise<boolean> => {
         type: 'contact_form',
         data: data,
         timestamp: new Date().toISOString(),
-        to_email: 'ganeshgadge222@gmail.com'
+        to_email: 'docs@sglogsitics.net.in'
       }),
     });
 

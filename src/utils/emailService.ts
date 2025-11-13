@@ -39,7 +39,7 @@ export const sendContactEmail = async (data: EmailData): Promise<boolean> => {
     // Email to the business owner
     const businessEmail = {
       from: process.env.EMAIL_USER || 'your-email@gmail.com',
-      to: 'ganeshgadge222@gmail.com',
+      to: 'docs@sglogsitics.net.in',
       subject: `New Contact Form Submission - ${data.option || 'General Inquiry'}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -101,7 +101,7 @@ export const sendContactEmail = async (data: EmailData): Promise<boolean> => {
             <div style="background-color: #e9ecef; padding: 15px; border-radius: 5px; margin: 20px 0;">
               <h4 style="color: #333; margin-top: 0;">Need immediate assistance?</h4>
               <p style="margin: 5px 0; color: #555;">📞 Phone: +91 9876543210</p>
-              <p style="margin: 5px 0; color: #555;">📧 Email: ganeshgadge222@gmail.com</p>
+              <p style="margin: 5px 0; color: #555;">📧 Email: docs@sglogsitics.net.in</p>
               <p style="margin: 5px 0; color: #555;">📍 Location: CBD Belapur, Navi Mumbai</p>
             </div>
             

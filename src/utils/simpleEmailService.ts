@@ -69,5 +69,5 @@ Please respond to: ${data.email}
 export const createMailtoLink = (data: EmailData): string => {
   const subject = encodeURIComponent(`Contact Form: ${data.option || 'General Inquiry'} - ${data.name}`);
   const body = encodeURIComponent(formatEmailContent(data));
-  return `mailto:ganeshgadge222@gmail.com?subject=${subject}&body=${body}`;
+  return `mailto:docs@sglogsitics.net.in?subject=${subject}&body=${body}`;
 };

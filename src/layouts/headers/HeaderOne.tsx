@@ -8,9 +8,6 @@ const HeaderOne = () => {
 
 	const { sticky } = useSticky()
 	const [openSidebar, setOpenSidebar] = useState(false)
-
-
-
 	return (
 		<>
 			<header className={`header-area ${sticky && "sticky-nav"}`} id="sticky-header">

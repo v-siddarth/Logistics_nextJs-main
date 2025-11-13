@@ -11,7 +11,7 @@ const HeroAreaHomeOne = () => {
       <section className="banner-section d-flex align-items-center">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 col-md-12 pe-5">   {/* pe-5 adds padding-end in Bootstrap */}
+            <div className="col-lg-6 col-md-12 pe-5"> 
 
               <div className="slider-content">  
                 {/* <div className="hero-social-icon animated fadeInLeft" data-wow-delay="0.2s">
@@ -41,10 +41,10 @@ const HeroAreaHomeOne = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-12 pe-5">   {/* pe-5 adds padding-end in Bootstrap */}
+            <div className="col-lg-6 col-md-12 pe-5"> 
 
               <div className="hero-main-img">
-                <div className="hero-img">
+                <div className="hero-img ms-5">
                   <img src="assets/images/hero/hero-2.png" alt="" />
                 </div>
               </div>
@@ -52,13 +52,6 @@ const HeroAreaHomeOne = () => {
           </div>
         </div>
       </section>
-      {/* video modal start */}
-      <VideoPopup
-        isVideoOpen={isVideoOpen}
-        setIsVideoOpen={setIsVideoOpen}
-        videoId={"Q5PG0rMXgvw"}
-      />
-      {/* video modal end */}
     </>
   );
 };

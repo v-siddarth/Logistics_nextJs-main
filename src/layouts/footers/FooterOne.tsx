@@ -170,14 +170,14 @@ const FooterTwo = () => {
 										<div className="contact-content">
 											<h4>Email</h4>
 												<a 
-													href="mailto:ganeshgadge222@gmail.com" 
+													href="mailto:docs@sglogsitics.net.in" 
 													style={{
 														color: 'inherit',
 														textDecoration: 'none',
 														cursor: 'pointer'
 													}}
 												>
-													<h6>ganeshgadge222@gmail.com</h6>
+													<h6>docs@sglogsitics.net.in</h6>
 												</a>
 										</div>
 									</div>

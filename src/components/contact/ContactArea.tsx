@@ -156,14 +156,14 @@ const ContactArea = () => {
                     <h4>Email</h4>
                     <h6>
                       <a 
-                        href="mailto:ganeshgadge222@gmail.com" 
+                        href="mailto:docs@sglogsitics.net.in" 
                         style={{
                           color: 'inherit',
                           textDecoration: 'underline',
                           cursor: 'pointer'
                         }}
                       >
-                        ganeshgadge222@gmail.com
+                        docs@sglogsitics.net.in
                       </a>
                     </h6>
                   </div>

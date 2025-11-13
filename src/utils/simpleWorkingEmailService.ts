@@ -11,7 +11,7 @@ export const sendEmailSimple = async (data: EmailData): Promise<boolean> => {
     console.log('📧 Attempting to send email...');
     
     // Using FormSubmit.co - 100% free, no signup required
-    const response = await fetch('https://formsubmit.co/ajax/ganeshgadge222@gmail.com', {
+    const response = await fetch('https://formsubmit.co/ajax/docs@sglogsitics.net.in', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ Please respond to: ${data.email}
     if (response.ok) {
       const result = await response.json();
       console.log('✅ EMAIL SENT SUCCESSFULLY!');
-      console.log('📬 Email sent to: ganeshgadge222@gmail.com');
+      console.log('📬 Email sent to: docs@sglogsitics.net.in');
       return true;
     } else {
       const errorText = await response.text();

@@ -28,37 +28,8 @@ const HeaderOne = () => {
 									<li><a href="/">Home <i className="bi"></i></a>
 									</li>
 									<li><Link href="/about">About Us</Link></li>
-									<li><Link href="/service-details">Services</Link>
-										{/* <div className="sub-menu">
-											<ul>
-												<li><Link href="/service">Service</Link></li>
-												<li><Link href="/service-details">Service Details</Link></li>
-											</ul>
-										</div> */}
+									<li><Link href="/service">Services</Link>
 									</li>
-									{/* <li><a href="#">Projects <i className="bi bi-chevron-down"></i></a>
-										<div className="sub-menu">
-											<ul>
-												<li><Link href="/projects-gallery">Project Gallery</Link></li>
-												<li><Link href="/projects-details">Project Details</Link></li>
-											</ul>
-										</div>
-									</li> */}
-									<li><Link href="/blog">Blog</Link>
-									</li>
-									{/* <li><a href="#">Page <i className="bi bi-chevron-down"></i></a>
-										<div className="sub-menu">
-											<ul>
-												<li><Link href="/about">About</Link></li>
-												<li><Link href="/service">Service</Link></li>
-												<li><Link href="/projects-gallery">Project</Link></li>
-												<li><Link href="/tracking">Tracking</Link></li>
-												<li><Link href="/team">Team</Link></li>
-												<li><Link href="/blog">Blog</Link></li>
-												<li><Link href="/faq">Faq</Link></li>
-											</ul>
-										</div>
-									</li> */}
 									<li><Link href="/contact">Contact</Link></li>
 								</ul>
 

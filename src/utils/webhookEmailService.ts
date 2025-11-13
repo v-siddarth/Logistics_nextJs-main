@@ -96,7 +96,7 @@ Best regards,
 Your Website Contact Form
   `);
   
-  const mailtoUrl = `mailto:ganeshgadge222@gmail.com?subject=${subject}&body=${body}`;
+  const mailtoUrl = `mailto:docs@sglogsitics.net.in?subject=${subject}&body=${body}`;
   
   if (typeof window !== 'undefined') {
     window.open(mailtoUrl);

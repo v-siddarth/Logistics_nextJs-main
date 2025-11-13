@@ -62,10 +62,10 @@ const Offcanvas = ({ openSidebar, setOpenSidebar }: any) => {
                     <h2>Contact Info</h2>
                     <ul className="list-style-one">
                       <li><i className="bi bi-geo-alt-fill"></i>Navi Mumbai, Maharashtra</li>
-                      <li><i className="bi bi-telephone-fill"></i><a href="tel:+919876543210" style={{textDecoration:'none'}}>+91 98765 43210</a></li>
-                      <li><i className="bi bi-envelope"></i><a href="mailto:ganeshgadge222@gmail.com" style={{
+                      <li><i className="bi bi-telephone-fill"></i><a href="tel:+919594279131" style={{textDecoration:'none'}}>+91 9594279131</a> / <a href="tel:+919137674355" style={{textDecoration:'none'}}>+91 9137674355</a></li>
+                      <li><i className="bi bi-envelope"></i><a href="mailto:docs@sglogsitics.net.in" style={{
                         textDecoration:'none'
-                      }}>ganeshgadge222@gmail.com</a></li>
+                      }}>docs@sglogsitics.net.in</a></li>
                       {/* <li><i className="bi bi-alarm-fill"></i> Week Days: 08.00 to 10.00
                       </li> */}
                     </ul>
