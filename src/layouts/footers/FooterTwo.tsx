@@ -145,7 +145,7 @@ const FooterTwo = () => {
                         </div>
                         <div className="contact-content">
                           <h4>Address</h4>
-                          <h6>Navi Mumbai, Maharashtra</h6>
+                          <h6>CBD Belapur, Navi Mumbai - 400614</h6>
                         </div>
                       </div>
                     </li>

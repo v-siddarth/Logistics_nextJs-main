@@ -14,7 +14,7 @@ const GoogleMap = () => {
                   </div>
                   <div className="map-content">
                     <span>Location</span>
-                    <h4>Navi Mumbai, Maharashtra</h4>
+                    <h4>International Infotech Center, CBD Belapur, Navi Mumbai - 400614</h4>
                   </div>
                 </div>
                 <div className="map-info-box">

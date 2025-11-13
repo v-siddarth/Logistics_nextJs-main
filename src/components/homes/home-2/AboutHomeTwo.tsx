@@ -41,7 +41,7 @@ const AboutHomeTwo = ({style_2} : any) => {
             <div className="col-lg-6 col-md-12">
               <div className="section-title wow fadeInUp" data-wow-delay="0.2s">
                 <div className="section-main-title style-two">
-                  <h2>About US</h2>
+                  <h2>We Make Logistics Smooth and Dependable</h2>
                 </div>
                 <div className="section-title-discription style-two">
                   <p>Company Overview · Customs Compliance Experience · Port & Depot Coverage · Mission & Values · Licenses & Certifications</p>
@@ -52,7 +52,7 @@ const AboutHomeTwo = ({style_2} : any) => {
                   <img src="assets/images/resource/deliver-icon.png" alt="" />
                 </div>
                 <div className="about-text-title">
-                  <h4>Delivering Excellence in Logistics</h4>
+                  <h4>Delivering Excellence in Every Shipment</h4>
                 </div>
               </div>
             </div>

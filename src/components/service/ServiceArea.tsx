@@ -11,7 +11,7 @@ const ServiceArea = () => {
             <div className="col-lg-4 col-md-6">
               <div className="service-box style-two inner-page wow fadeInUp" data-wow-delay="0.4s">
                 <div className="service-content style-two">
-                  <h2><Link href="/service-details">Licensed CHA Customs Clearance Services</Link></h2>
+                  <h2><Link href="/service-details">Custom Broker-Customs Clearance services for import and export</Link></h2>
                 </div>
                 <div className="service-icon style-two">
                   <img src="assets/images/service/service-icon4.png" alt="" />
@@ -24,7 +24,7 @@ const ServiceArea = () => {
             <div className="col-lg-4 col-md-6">
               <div className="service-box style-two inner-page wow fadeInUp" data-wow-delay="0.6s">
                 <div className="service-content style-two">
-                  <h2><Link href="/service-details"> Freight Forwarding (Sea & Air Cargo)</Link></h2>
+                  <h2><Link href="/service-details">Freight Forwarding Air Sea and Road freight forwarding in India</Link></h2>
                 </div>
                 <div className="service-icon style-two">
                   <img src="assets/images/service/service-icon5.png" alt="" />
@@ -37,7 +37,7 @@ const ServiceArea = () => {
             <div className="col-lg-4 col-md-6">
               <div className="service-box style-two inner-page wow fadeInUp" data-wow-delay="0.8s">
                 <div className="service-content style-two">
-                  <h2><Link href="/service-details">Container Transportation & Last‑Mile Deliverys</Link></h2>
+                  <h2><Link href="/service-details">Transportation Reliable goods transportation across India</Link></h2>
                 </div>
                 <div className="service-icon style-two">
                   <img src="assets/images/service/service-icon6.png" alt="" />

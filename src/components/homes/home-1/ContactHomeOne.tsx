@@ -28,7 +28,7 @@ const ContactHomeOne = ({style_2} : any) => {
                   </div>
                   <div className="contact-content">
                     <h4>Location</h4>
-                    <h6>Navi Mumbai, Maharashtra</h6>
+                    <h6>D-209, 2nd Floor, Tower No. 7, International Infotech Center, CBD Belapur, Navi Mumbai - 400614</h6>
                   </div>
                 </div>
                 <div className="contact-items">

@@ -24,8 +24,8 @@ const HomeTwo = () => {
 			<ServiceAreaHomeTwo />
 			<TestimonialHomeTwo />
 			<TeamHomeTwo />
-			<FaqHomeTwo />
-			<BlogHomeTwo />
+			{/* <FaqHomeTwo /> */}
+			{/* <BlogHomeTwo /> */}
 			<GoogleMap />
 			<FooterTwo />
 		</>

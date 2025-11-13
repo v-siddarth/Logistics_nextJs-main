@@ -2,44 +2,85 @@
 import Count from "@/common/count";
 import { useState } from "react";
 
-const faq_data = [
+const services_data = [
   {
-    question: "What industries do you specialize in?",
-    answer: "We offer specialized customs and logistics solutions for diverse industries—pharma shipments with cold-chain and import license support, electronics requiring CES RC and EMC safety certification, engineering goods with heavy cargo and project logistics expertise, apparel and textiles managed through precise HS codes and quota controls, and chemicals handled with odourless, non-hazardous documentation support.",
+    title: "Custom Broker",
+    description:
+      "Complete customs clearance support including documentation, tariff classification, duty calculation and liaison with customs authorities to ensure fast and compliant clearance.",
   },
   {
-    question: "Which major ports and logistics hubs do you cover?",
-    answer:"Our extensive network covers all major Indian ports, including Nhava Sheva (JNPT), Mundra, Hazira, Chennai, and Kolkata, ensuring seamless logistics and reliable customs clearance across the country.",
+    title: "Freight Forwarding",
+    description:
+      "End-to-end freight forwarding for sea, air and road — routing, carrier selection, booking, cargo consolidation and end-to-end tracking.",
   },
   {
-    question: "Do you offer tailored solutions for individual clients?",
-    answer: "We tailor our solutions to fit your unique logistics needs. Every client is assigned a dedicated support team that manages documentation, provides proactive updates, and offers direct access to experts at every stage",
+    title: "Transportation",
+    description:
+      "Domestic and international transportation solutions with multimodal options, secure handling and door-to-door pickup and delivery.",
   },
-]
+  {
+    title: "Cargo Insurance",
+    description:
+      "Cargo insurance policies tailored to your shipments, covering loss, damage and transit-related risks with easy claim assistance.",
+  },
+  {
+    title: "Door-To-Door Delivery",
+    description:
+      "Hassle-free pickup from origin and delivery to the consignee’s door with real-time tracking and proof-of-delivery.",
+  },
+  {
+    title: "DGFT Consultation",
+    description:
+      "Assistance with DGFT procedures — IEC registration, import/export licensing, FTP compliance and veterinary/phytosanitary support where required.",
+  },
+  {
+    title: "Chartered Engineer Certification",
+    description:
+      "Technical certification support from certified chartered engineers for equipment, heavy cargo and project consignments needing engineering approvals.",
+  },
+];
 
-const FaqHomeTwo = ({style_2} : any) => {
-    const [open, setOpen] = useState(0);
-  
+const FaqHomeTwo = ({ style_2 }: any) => {
+  const [open, setOpen] = useState<number | null>(null);
+
   return (
     <>
       <div className={`faq-area style-two ${style_2 ? "inner-page" : ""}`}>
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12">
-              <div className="section-title wow fadeInUp" data-wow-delay="0.2s">
-                <div className={`section-main-title ${style_2 ? "section-main-title" : "faq inner"}`}>
-                  {style_2 ? 
-                  <h2>Ask Some Question</h2>
-                  :
-                  <h2>Quick Answers</h2>
-                  
-                }
+              <div
+                className="section-title wow fadeInUp"
+                data-wow-delay="0.2s"
+              >
+                <div
+                  className={`section-main-title ${
+                    style_2 ? "section-main-title" : "faq inner"
+                  }`}
+                >
+                  {/* Changed heading to Services */}
+                  {style_2 ? (
+                    <h2>Our Services</h2>
+                  ) : (
+                    <h2>Our Services</h2>
+                  )}
                 </div>
                 <div className="section-discription style-two">
-                  <p>Have questions about our services? Explore our FAQ section for clear answers on our logistics capabilities, industry specialization, major port coverage, and how we customize solutions for your unique needs. We’re committed to providing transparency and support at every step of your logistics journey.</p>
+                  {/* New description about services */}
+                  <p>
+                    Explore the core services we provide. From customs
+                    clearance and freight forwarding to cargo insurance and
+                    door-to-door deliveries — each service is backed by an
+                    expert team to ensure fast, compliant and cost-effective
+                    logistics solutions tailored to your needs.
+                  </p>
                 </div>
               </div>
-              <div className="about-single-counter style-two wow fadeInUp" data-wow-delay="0.4s">
+
+              <div
+                className="about-single-counter style-two wow fadeInUp"
+                data-wow-delay="0.4s"
+              >
                 <div className="about-counter style-two">
                   <div className="about-icon">
                     <img src="assets/images/about/about-icon2.png" alt="" />
@@ -58,20 +99,37 @@ const FaqHomeTwo = ({style_2} : any) => {
                 </div>
               </div>
             </div>
+
             <div className="col-lg-6 col-md-12">
-              <div className="faq-click-btn wow fadeInUp" data-wow-delay="0.4s">
+              <div
+                className="faq-click-btn wow fadeInUp"
+                data-wow-delay="0.4s"
+              >
                 <ul className="accordion style-two">
-                   
-                  {faq_data.map((item, i) => (
-                  <li key={i}>
-                    <a className={`${open === i ? "active" : ""}`} onClick={() => setOpen(i)}><span> 0{i +1}. {item.question}</span></a>
-                    <p style={open === i ? { display: "block" } : { display: "none" }}>{item.answer}</p>
-                  </li> 
-                  ))} 
-                  
+                  {services_data.map((item, i) => (
+                    <li key={i}>
+                      <a
+                        className={`${open === i ? "active" : ""}`}
+                        onClick={() => setOpen(open === i ? null : i)}
+                        style={{ cursor: "pointer" }}
+                      >
+                        <span>
+                          0{i + 1}. {item.title}
+                        </span>
+                      </a>
+                      <p
+                        style={
+                          open === i ? { display: "block" } : { display: "none" }
+                        }
+                      >
+                        {item.description}
+                      </p>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
+
           </div>
         </div>
       </div>

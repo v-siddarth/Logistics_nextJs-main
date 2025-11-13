@@ -87,7 +87,7 @@ const MobileMenu = () => {
                   <div className="contact-info">
                     <h2>Contact Info</h2>
                     <ul className="list-style-one">
-                      <li><i className="bi bi-geo-alt-fill"></i>Navi Mumbai, Maharashtra</li>
+                      <li><i className="bi bi-geo-alt-fill"></i>D-209, 2nd Floor, Tower No. 7, International Infotech Center, CBD Belapur, Navi Mumbai - 400614</li>
                       <li><i className="bi bi-telephone-fill"></i><a href="tel:+919594279131" style={{textDecoration:'none'}}>+91 9594279131</a> / <a href="tel:+919137674355" style={{textDecoration:'none'}}>+91 9137674355</a></li>
                       <li><i className="bi bi-envelope"></i><a href="mailto:docs@sglogsitics.net.in" style={{
                         textDecoration:'none'
