@@ -26,7 +26,7 @@
 
 /* Logo size fix */
 .logo img {
-  max-width: 100px;
+  width: 120px;
   height: auto;
 }
 

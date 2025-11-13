@@ -8,7 +8,7 @@ const HeaderOne = () => {
   const { sticky } = useSticky();
   const [openSidebar, setOpenSidebar] = useState(false);
 
-  return (  
+  return (
     <>
       <header className={`header-area ${sticky && "sticky-nav"}`} id="sticky-header">
         <div className="container">
@@ -22,7 +22,7 @@ const HeaderOne = () => {
                     src="assets/images/logo.png"
                     alt="SG Logistics"
                     className="img-fluid"
-                    style={{ width: "200px", height: "auto" }}  // <-- LOGO SIZE HERE
+                    
                   />
                 </Link>
               </div>
