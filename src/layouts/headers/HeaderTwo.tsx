@@ -10,7 +10,7 @@ const HeaderOne = () => {
 
   return (
     <>
-      <header className={`header-area ${sticky && "sticky-nav"}`} id="sticky-header">
+      <header className={header-area}
         <div className="container">
           <div className="row align-items-center">
             
