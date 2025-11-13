@@ -8,53 +8,52 @@ const HeaderOne = () => {
   const { sticky } = useSticky();
   const [openSidebar, setOpenSidebar] = useState(false);
 
-  return (
+  return (  
     <>
       <header className={`header-area ${sticky && "sticky-nav"}`} id="sticky-header">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-2">
+            
+            {/* Logo Section */}
+            <div className="col-lg-2 col-6">
               <div className="logo">
-                <Link href="/"><img src="assets/images/logo.png" alt="" /></Link>
+                <Link href="/">
+                  <img
+                    src="assets/images/logo.png"
+                    alt="SG Logistics"
+                    className="img-fluid"
+                    style={{ width: "200px", height: "auto" }}  // <-- LOGO SIZE HERE
+                  />
+                </Link>
               </div>
             </div>
-            <div className="col-lg-10">
-              <div className="header-menu">
-                <ul>
-                  <li><a href="/">Home <i className="bi"></i></a></li>
+
+            {/* Menu Section */}
+            <div className="col-lg-10 col-6">
+              <div className="header-menu d-flex justify-content-end align-items-center">
+
+                <ul className="d-flex gap-4 m-0">
+                  <li><a href="/">Home</a></li>
                   <li><Link href="/about">About Us</Link></li>
                   <li><Link href="/service">Services</Link></li>
                   <li><Link href="/contact">Contact</Link></li>
                 </ul>
 
-                <div className="header-right">
-                  {/* Sidebar button if needed in future */}
-                  {/* <div className="header-sidebar">
-                    <a
-                      className="navSidebar-button"
-                      style={{ cursor: "pointer" }}
-                      onClick={() => setOpenSidebar(!openSidebar)}
-                    >
-                      <i className="fas fa-bars"></i>
-                    </a>
-                  </div> */}
-
+                <div className="header-right ms-4">
                   <div className="packpro-btn">
-                    {/* Download from public folder */}
                     <a
                       href="/brochure.pdf"
-                      download="Sg logistics Brochure.pdf"
-                      style={{ cursor: "pointer", textDecoration: "none" }}
+                      download="SG Logistics Brochure.pdf"
+                      className="btn btn-primary px-4 py-2"
                     >
                       DOWNLOAD BROCHURE
                     </a>
-                    {/* If you want it to open in a new tab instead, use:
-                      <a href="/packpro-brochure.pdf" target="_blank" rel="noopener noreferrer">DOWNLOAD BROCHURE</a>
-                    */}
                   </div>
                 </div>
+
               </div>
             </div>
+
           </div>
         </div>
       </header>

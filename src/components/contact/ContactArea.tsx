@@ -136,7 +136,7 @@ const ContactArea = () => {
                   </div>
                   <div className="contact-content">
                     <h4>Need help?</h4>
-                    <h6>+91 9876543210</h6> 
+                    <h6>+91 9594279131 / 9137674355 </h6> 
                   </div>
                 </div>
                 <div className="contact-items">
