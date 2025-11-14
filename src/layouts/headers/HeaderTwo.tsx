@@ -10,10 +10,41 @@ const HeaderOne = () => {
 
   return (
     <>
-      <header className='header-area'>
+      <div className="topbar py-2">
         <div className="container">
           <div className="row align-items-center">
-            
+
+            {/* Email */}
+            <div className="col-md-6 col-12 text-center text-md-start">
+              <small>
+                <a href="mailto:docs@sglogsitics.net.in" className="fw-bold text-decoration-none">
+                  docs@sglogsitics.net.in
+                </a>
+              </small>
+            </div>
+
+            {/* Phone Numbers */}
+            <div className="col-md-6 col-12 text-center text-md-end">
+              <small>
+                📞 &nbsp;
+                <a href="tel:+919594279131" className="fw-bold text-decoration-none">
+                  +91 95942 79131
+                </a>
+                &nbsp;/&nbsp;
+                <a href="tel:+919137674355" className=" fw-bold text-decoration-none">
+                  +91 91376 74355
+                </a>
+              </small>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <header className="header-area">
+        <div className="container">
+          <div className="row align-items-center">
+
             {/* Logo Section */}
             <div className="col-lg-2 col-6">
               <div className="logo">
@@ -22,7 +53,6 @@ const HeaderOne = () => {
                     src="assets/images/logo.png"
                     alt="SG Logistics"
                     className="img-fluid"
-                    
                   />
                 </Link>
               </div>
@@ -57,6 +87,13 @@ const HeaderOne = () => {
           </div>
         </div>
       </header>
+
+      {/* GLOBAL STYLE (OPTIONAL) */}
+      <style jsx global>{`
+        .topbar {
+          font-size: 20px;
+        }
+      `}</style>
     </>
   );
 };
