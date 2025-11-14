@@ -24,6 +24,10 @@
 @import "../../public/assets/css/animate.css";
 @import "./mobile-fixes.css";
 
+.header-area{
+  background-color: #fefed2;
+}
+
 /* Logo size fix */
 .logo img {
   width: 200px;

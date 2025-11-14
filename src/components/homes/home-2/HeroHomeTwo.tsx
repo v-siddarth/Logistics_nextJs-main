@@ -1,51 +1,45 @@
-"use client"
-import VideoPopup from "@/modals/video-popup";
-import Link from "next/link";
-import { useState } from "react";
+"use client"; 
 
-const HeroAreaHomeOne = () => {
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
-
+const HeroHomeTwo = () => {
   return (
     <>
-      <section className="banner-section d-flex align-items-center">
+      <section className="banner-section style-two d-flex align-items-center">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 col-md-12 pe-5"> 
-
-              <div className="slider-content">  
-                {/* <div className="hero-social-icon animated fadeInLeft" data-wow-delay="0.2s">
-                  <ul>
-                    <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i className="fab fa-pinterest-p"></i></a></li>
-                  </ul>
-                </div> */}
-                <div className="slider-main-title">
-                  <h1 className="menu">LOGISTIC SERVICES <br /><span>INVOLVE THE</span><br />MOVEMENT</h1>
+            <div className="col-lg-6 col-md-12">
+              <div className="slider-content style-two">
+                <div className="slider-main-title style-two">
+                  <h1 className="menu">Logistic services involve the <span>movement storage goods</span></h1>
                 </div>
                 <div className="slider-discription">
-                  <p>Logistic services involve the movement, storage, and management of goods and materials. Providers ensure efficient supply chain. </p>
-                </div>
-                <div className="slider-bottom">
-                  <div className="video-icon">
-                    {/* <a className="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true"
-                      onClick={() => setIsVideoOpen(true)}
-                      style={{ cursor: "pointer" }}
-                    ><i className="bi bi-play-fill"></i></a> */}
-                  </div>
-                  <div className="packpro-btn slider1">
-                    {/* <Link href="/service-details">Watch Video</Link> */}
+                   <p>Logistic services involve the movement, storage, and management of goods and materials. Providers ensure efficient supply chain. </p>                 </div>
+                <div className="contact-box style-two  wow fadeInUp" data-wow-delay="0.2s">
+                  <div className="row">
+                    <div className="col-lg-12 ">
+                       <img src="assets/images/hero/hero-left.jpg" alt="" style={{ width: "300px", height: "auto" }}/>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-12 pe-5"> 
-
-              <div className="hero-main-img">
-                <div className="hero-img ms-5">
+            <div className="col-lg-6 col-md-12">
+              <div className="hero-main-img style-two">
+                <div className="hero-img style-two ms-5">
                   <img src="assets/images/hero/hero-2.png" alt="" />
+                  <div className="hero-shape-one style-two">
+                    <img src="assets/images/hero/hero-shape3.png" alt="" style={{ width: "250px", height: "auto" }}/>
+                  </div>
+                </div>
+                <div className="hero-brand">
+                  <div className="brand-img">
+                    <img src="assets/images/hero/brand1.png" alt="" style={{ width: "200px", height: "auto" }}/>
+                  </div>
+                  <div className="brand-img">
+                    <img src="assets/images/hero/brand2.png" alt="" style={{ width: "200px", height: "auto" }}/>
+                  </div>
+                  <div className="brand-img">
+                    <img src="assets/images/hero/brand3.png" alt="" style={{ width: "200px", height: "auto" }}/>
+                  </div>
                 </div>
               </div>
             </div>
@@ -56,4 +50,4 @@ const HeroAreaHomeOne = () => {
   );
 };
 
-export default HeroAreaHomeOne;
+export default HeroHomeTwo;

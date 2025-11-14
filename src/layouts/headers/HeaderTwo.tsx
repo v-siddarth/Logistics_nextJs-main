@@ -10,7 +10,7 @@ const HeaderOne = () => {
 
   return (
     <>
-      <header className={header-area}
+      <header className='header-area'>
         <div className="container">
           <div className="row align-items-center">
             
