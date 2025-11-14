@@ -286,9 +286,6 @@
   }
 
   .mobile-logo img {
-    max-width: 80px !important;
-    height: auto !important;
-    max-height: 40px !important;
     object-fit: contain !important;
   }
 
@@ -341,11 +338,6 @@
     padding: 12px 15px !important;
   }
 
-  .mobile-logo img {
-    max-width: 70px !important;
-    max-height: 35px !important;
-  }
-
   /* Adjust top margin for smaller screens */
   .banner-section,
   .slider-area,
@@ -359,10 +351,10 @@
     padding: 10px 15px !important;
   }
 
-  .mobile-logo img {
+  /* .mobile-logo img {
     max-width: 60px !important;
     max-height: 30px !important;
-  }
+  } */
 
   /* Adjust top margin for smallest screens */
   .banner-section,

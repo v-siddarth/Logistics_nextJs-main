@@ -25,9 +25,8 @@ const MobileMenu = () => {
                 src="assets/images/logo.png" 
                 alt="Logo" 
                 style={{ 
-                  maxWidth: '80px', 
-                  height: 'auto', 
-                  maxHeight: '40px',
+                  width: '  90px', 
+                  height: 'auto',
                   objectFit: 'contain'
                 }} 
               />
