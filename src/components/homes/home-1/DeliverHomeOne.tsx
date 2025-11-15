@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const DeliverHomeOne = () => {
@@ -17,7 +16,10 @@ const DeliverHomeOne = () => {
             </div>
             <div className="col-lg-4 col-md-12">
               <div className="deliver-title-discription">
-                <p>Logistic services involve the movement a  storage, and management upply chain operations</p>
+                <p>
+                  Efficient logistics solutions designed to optimize supply chain operations 
+                  and enhance delivery performance.
+                </p>
               </div>
             </div>
           </div>
@@ -36,7 +38,10 @@ const DeliverHomeOne = () => {
                     </div>
                     <div className="deliver-content">
                       <h2><a href="#">Navigate the Logistics Journey</a></h2>
-                      <p>Logistic services involve the movement an storage, and management Logistic services involve the movement a  storage Logistic services involve the movement </p>
+                      <p>
+                        Experience seamless coordination across every stage of your logistics 
+                        journey—from transport to warehousing and distribution.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -51,7 +56,10 @@ const DeliverHomeOne = () => {
                       <h2>10</h2>
                       <span>+</span>
                       <h6>Years Of Experiences</h6>
-                      <p>Logistic services involve movement storage, and management </p>
+                      <p>
+                        With over a decade of excellence, we specialize in reliable logistics 
+                        handling and efficient cargo movement.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -59,10 +67,10 @@ const DeliverHomeOne = () => {
                   <div className="delivery-single-box wow fadeInUp" data-wow-delay="0.8s">
                     <div className="delivery-content">
                       <h4>PerfectCargo Solutions</h4>
-                      <p>Logistic services involve movement storage, and management of goods and materials. Providers </p>
-                      <div className="packpro-btn about">
-                        <a href="#">Read More <i className="bi bi-arrow-right"></i></a>
-                      </div>
+                      <p>
+                        We provide end-to-end cargo solutions designed to streamline operations 
+                        and ensure secure, timely deliveries.
+                      </p>
                     </div>
                   </div>
                 </div>
